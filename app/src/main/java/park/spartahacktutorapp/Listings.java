@@ -19,7 +19,7 @@ import static park.spartahacktutorapp.MainActivity.listings;
 
 public class Listings extends AppCompatActivity {
 
-    public WaterData temp;
+    public int index = -1;
     public String searchText = "";
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -116,23 +116,22 @@ public class Listings extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 2 && resultCode == Activity.RESULT_OK) {
-            int index = data.getIntExtra("qty", 1);
-            temp.quantity = index;
+            int qty = data.getIntExtra("qty", 1);
+            listings.get(index).quantity = qty;
             finishDialog();
         } else {
-            temp = null;
+            index = -1;
         }
     }
     public void labelClick(View clicked) {
-        temp = (WaterData)clicked.getTag();
+        index = listings.indexOf((WaterData)clicked.getTag());
+        InfoActivity.data = (WaterData)clicked.getTag();
         startActivityForResult(new Intent(Listings.this, InfoActivity.class), 2);
     }
 
     public void finishDialog() {
-        if(temp!=null) {
-            Intent result = new Intent();
-            result.putExtra("food", listings.indexOf(temp));
-            setResult(Activity.RESULT_OK, result);
+        if(index!=-1) {
+            setResult(Activity.RESULT_OK);
         } else {
             setResult(Activity.RESULT_CANCELED);
         }

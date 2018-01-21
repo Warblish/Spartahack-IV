@@ -25,7 +25,7 @@
         </activity>
         <activity
             android:name=".InfoActivity"
-            android:label="@string/title_activity_info"
+            android:label="Food Options"
             android:theme="@style/AppTheme.Dialog"></activity>
     </application>
 

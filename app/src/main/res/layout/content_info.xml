@@ -17,32 +17,42 @@
             android:layout_height="wrap_content"
             android:text="Food"
             android:textSize="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:id="@+id/info_food"
             />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Blue"
-            android:textSize="30dp"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:id="@+id/info_blue"
             />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Green"
-            android:textSize="30dp"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:id="@+id/info_green"
             />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Gray"
-            android:textSize="30dp"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:id="@+id/info_gray"
             />
         <NumberPicker
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:id="@+id/picker"
             >
         </NumberPicker>
