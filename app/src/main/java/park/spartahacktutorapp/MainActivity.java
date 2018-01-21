@@ -6,11 +6,18 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import org.json.JSONObject;
+
+import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Iterator;
+
+import static android.R.attr.key;
 
 public class MainActivity extends AppCompatActivity {
     public static ArrayList<WaterData> listings = new ArrayList<WaterData>();
@@ -18,9 +25,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        listings.add(new WaterData("Beef", 1,1,1,1));
-        listings.add(new WaterData("Corn", 1,1,1,1));
-        listings.add(new WaterData("Chicken", 1,1,1,1));
+
+        loadJson();
+
+
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -55,6 +63,47 @@ public class MainActivity extends AppCompatActivity {
                     LinearLayout.LayoutParams.WRAP_CONTENT));
             layout.addView(view);
         }
+    }
+
+    public void loadJson() {
+        try {
+            JSONObject dataArray = new JSONObject(extractJson("USimpact.json"));
+            JSONObject usData = (JSONObject) dataArray.get("USA");
+            Iterator<String> keys = usData.keys();
+            while(keys.hasNext()) {
+                Log.wtf("test_main", "iterating");
+                String key = (String)keys.next();
+                try {
+                    int i = Integer.valueOf(key);
+                } catch (Exception e) {
+                    continue;
+                }
+
+                JSONObject foodObj = (JSONObject) usData.get(key);
+                listings.add(new WaterData(foodObj.getString("Name"),
+                        foodObj.getInt("Blue"),
+                        foodObj.getInt("Green"),
+                        foodObj.getInt("Grey"),
+                        Integer.valueOf(key)));
+            }
+        } catch (Exception e) {
+            Log.wtf("test_main", "error in json");
+            Log.wtf("test_main", e.getMessage());
+        }
+    }
+
+    public String extractJson(String filename) {
+        try {
+            InputStream str = getAssets().open(filename);
+            int av = str.available();
+            byte[] bytes = new byte[av];
+            str.read(bytes);
+            str.close();
+            return new String(bytes);
+        } catch (Exception e) {
+
+        }
+        return "";
     }
 
 }
