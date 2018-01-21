@@ -40,6 +40,7 @@ public class Listings extends AppCompatActivity {
         });
 
         SearchView searchBar = (SearchView) findViewById(R.id.searcher);
+        //searchBar.setLayoutParams(new android.app.ActionBar.LayoutParams(android.view.Gravity.RIGHT));
         searchBar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
