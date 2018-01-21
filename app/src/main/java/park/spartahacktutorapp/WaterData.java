@@ -9,13 +9,13 @@ public class WaterData {
     public float blue;
     public float grey;
     public float green;
-    public float impact;
+    public int id;
     public float quantity = 0;
-    public WaterData(String food, float blue, float grey, float green, float impact) {
+    public WaterData(String food, float blue, float green, float grey, int id) {
         this.food = food;
         this.blue = blue;
         this.grey = grey;
         this.green = green;
-        this.impact = impact;
+        this.id = id;
     }
 }
