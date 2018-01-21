@@ -15,7 +15,7 @@ def get_impact(i):
 	for country in proportions[i]['countries']:
 		#print(country)
 		multiplier += float(stress.get(country, 0))
-	return total_water(waterdata.get(str(i))) * multiplier
+	return total_water(waterdata.get(str(i))) * multiplier/100
 finaldata = {}
 for itemid in proportions.keys():
 	if get_impact(itemid):
