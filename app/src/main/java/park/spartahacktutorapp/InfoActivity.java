@@ -15,8 +15,12 @@ public class InfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_info);
+
+        NumberPicker picker = (NumberPicker) findViewById(R.id.picker);
         if(data!=null) {
+            picker.setValue((int)data.quantity);
             TextView title = (TextView) findViewById(R.id.info_food);
             title.setText(data.food);
             TextView green = (TextView) findViewById(R.id.info_green);
@@ -30,7 +34,6 @@ public class InfoActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        NumberPicker picker = (NumberPicker) findViewById(R.id.picker);
         picker.setMaxValue(1000);
         picker.setMinValue(0);
 

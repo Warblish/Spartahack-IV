@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -64,8 +65,12 @@ public class MainActivity extends AppCompatActivity {
         TextView title3 = new TextView(this);
 
         title1.setText("Food");
-        title2.setText("Quantity");
-        title3.setText("Phi");
+        title2.setText("Quantity (g)");
+        title3.setText("Impact");
+
+        title1.setTextSize(28);
+        title2.setTextSize(28);
+        title3.setTextSize(28);
 
         title1.setGravity(Gravity.CENTER);
         title2.setGravity(Gravity.CENTER);
@@ -87,6 +92,10 @@ public class MainActivity extends AppCompatActivity {
             TextView text2 = new TextView(this);
             TextView text3 = new TextView(this);
 
+            title1.setTextSize(20);
+            title2.setTextSize(20);
+            title3.setTextSize(20);
+
             text1.setTag(list);
             text2.setTag(list);
             text3.setTag(list);
@@ -104,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
             text1.setText(list.food);
             text2.setText(""+list.quantity);
-            text3.setText(""+list.green);
+            text3.setText(""+list.impact*list.quantity);
 
             text1.setGravity(Gravity.CENTER);
             text2.setGravity(Gravity.CENTER);
@@ -121,10 +130,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loadJson() {
+        float impactConst = 150;
         try {
-            JSONObject dataArray = new JSONObject(extractJson("USimpact.json"));
-            JSONObject usData = (JSONObject) dataArray.get("USA");
-            Iterator<String> keys = usData.keys();
+            JSONObject dataArray = new JSONObject(extractJson("final.json"));
+            //JSONObject usData = (JSONObject) dataArray.get("USA");
+            Iterator<String> keys = dataArray.keys();
             while(keys.hasNext()) {
                 String key = (String)keys.next();
                 try {
@@ -133,15 +143,16 @@ public class MainActivity extends AppCompatActivity {
                     continue;
                 }
 
-                JSONObject foodObj = (JSONObject) usData.get(key);
-                listings.add(new WaterData(foodObj.getString("Name"),
-                        foodObj.getInt("Blue"),
-                        foodObj.getInt("Green"),
-                        foodObj.getInt("Grey"),
+                JSONObject foodObj = (JSONObject) dataArray.get(key);
+                listings.add(new WaterData(foodObj.getString("name"),
+                        foodObj.getInt("blue"),
+                        foodObj.getInt("green"),
+                        foodObj.getInt("grey"),
+                        foodObj.getInt("impact")/impactConst,
                         Integer.valueOf(key)));
             }
         } catch (Exception e) {
-
+            Log.wtf("test-main", e.getMessage());
         }
     }
 

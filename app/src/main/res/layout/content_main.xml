@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,16 +8,6 @@
     tools:context="park.spartahacktutorapp.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <LinearLayout
-        android:id="@+id/main_layout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp"></LinearLayout>
 
     <TableLayout
         android:id="@+id/main_table"
@@ -38,7 +28,8 @@
                 android:layout_height="wrap_content"
                 android:layout_column="0"
                 android:gravity="center"
-                android:text="Food" />
+                android:text="Food"
+                />
 
             <TextView
                 android:id="@+id/textView5"
@@ -54,9 +45,9 @@
                 android:layout_height="wrap_content"
                 android:layout_column="2"
                 android:gravity="center"
-                android:text="Phi" />
+                android:text="Impact" />
         </TableRow>
 
     </TableLayout>
 
-</android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
