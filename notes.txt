@@ -1,0 +1,2 @@
+in impactParser, parse up to row 1065
+US average = DOF
