@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Spartahack-IV.iml" filepath="$PROJECT_DIR$/Spartahack-IV.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpartahackTutorapp.iml" filepath="$PROJECT_DIR$/SpartahackTutorapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
