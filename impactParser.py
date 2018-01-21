@@ -27,8 +27,8 @@ def get_region_data(column):
 				continue
 			data[cv(row, 'A')] = get_footprint(row, column)
 	return data
-water_data["USA"] = get_region_data("DOF")
+water_data["Global"] = get_region_data("J")
 print("Data parsed")
 #print(cv(7, "DOF"))
-with open('USimpact.json', 'w') as f:
+with open('GlobalImpact.json', 'w') as f:
 	json.dump(water_data, f)
