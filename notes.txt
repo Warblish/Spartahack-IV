@@ -2,3 +2,5 @@ in impactParser, parse up to row 1065
 US average = DOF
 water cost format: {code: {"Name": name, "Green": 10805, "Blue": 1233 "Grey": 1234}, ...}
 relative production format: {code (e.g. 15): {"name": Item Name, "countries":{"China": 10.50", "United States": "20.80"}}, ...} 
+final data format: {code (string number): {"name": string, "impact": number,
+"blue": number, "green": number, "grey": number}}
