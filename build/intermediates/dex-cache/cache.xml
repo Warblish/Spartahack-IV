@@ -3,21 +3,156 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\staff\AndroidStudioProjects\ParkApp\SpartahackTutorapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\Kieran\.android\build-cache\a5a7bb95c8645d6a9281f69ca1c8f4d6d65a1386\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_46e81cc582fa8090fe9afd7139ee6115eb7709bc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\.android\build-cache\9f4f6937f76ea962568aed96202dd8e6286b89f1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e0e8e4b7992427fba7e245a4d0e081361c2e6449\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\.android\build-cache\b15b0fa72847ea6a6cc5cec88dae43358c9867da\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9b7ee6b6b5810740d172645beae000a432e178a7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\.android\build-cache\62801b37c47f778f0b6253a241f4e40c231607a3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_13b10f4895deb73802ace7b76927ce2f49cc1192\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\.android\build-cache\e9b335cd58fba1c57d09f89041d20f07e25b4325\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4bf536cc362f1f9b92bd9d4a0e1dad368cc9e31b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\.android\build-cache\b35455c0f7c729e6584296ee72c768433b87c721\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a6e1e7a5d0a2b6d875eaa101103a36e38b9711fa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\.android\build-cache\910b34650a257063df33536f94367db563d833e1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4c7979d4e93e561b81eef36aace6f3e76b18c43e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\.android\build-cache\f72a661fdce8db93235766e0eaae9913b8fbefd2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_80ef1311fe2303c7ebc5c7e3cb55daafc839794d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="9572c635bc116181e31ae81f42dc344d553bcf27">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_5ce8157201f0bdb5f1966e774d96977666404db0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_6f051e7991a59fd0fefa2851d84a985a764e5086\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="27.0.3"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\staff\AndroidStudioProjects\ParkApp\SpartahackTutorapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_26c3377f1d2ec7f25cddccd669ca5e6b55279424\classes.dex" />
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_33cdffa300f29aebb85dd7eb904e1c3946678c3f\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\staff\AndroidStudioProjects\ParkApp\SpartahackTutorapp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\Kieran\.android\build-cache\9122c7e9da93c3d27e927e340773405d35b754c2\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="27.0.3"
-        sha1="a5df4ff42a324a1d9131492fbac42dcc8271bd2f">
-        <dex dex="C:\Users\staff\AndroidStudioProjects\ParkApp\SpartahackTutorapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_4df412c185c0c3ea322f5f0d4e91601694cff358\classes.dex" />
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7558414f89a63fe13201b36e9ba4abebf2c9dc0e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\.android\build-cache\43565cb9ce024ad5042e5dba7eb79fc1c16b590a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_753d45ef372507836aae4b0da0177a90559d1072\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\.android\build-cache\07c82b9eb0457b555b80d32e2e3ebcc64ab8c10a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e22f80fdee005f087d30ec4359757200ecd36135\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.0.0-alpha1_3f8766ada1c43071c55a50b91df1d32db66cc739\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\.android\build-cache\090b0a1c49f3d2f312b545f112c46158ac58791a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bb7a979b20485e957c12480266c5794a919c00a2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kieran\.android\build-cache\3f5342da48ec025efc3d02927701f0040c50cd57\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="C:\Users\Kieran\Documents\GitHub\Spartahack-IV\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f3f27ade34a122b41951ae52abd4dc80cfc06f50\classes.dex" />
     </item>
 
 </items>
